@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d5c643f1fb9b8624ab3bfd8e3c3744d781b19d23512e0f58c7c21ecd184eb3a
-size 589
+#!/bin/bash
+
+# Ask the user for login details
+read -p 'Git repository url: ' upstreamVar
+read -p 'Git Username: ' userVar
+read -p 'Git email: ' emailVar
+
+echo
+echo Thankyou $userVar, we now have your credentials
+echo for upstream $upstreamVar. You must supply your password for each push.
+echo
+
+echo setting up git
+
+git config --global user.name $userVar
+git config --global user.email $emailVar
+git remote set-url origin $upstreamVar
+echo
+
+echo Please verify remote:
+git remote -v
+echo
+
+echo Please verify credentials:
+echo username: git config user.name
+echo email git config user.email
