@@ -45,5 +45,5 @@ The model was trained and validated on different data sets to ensure that the mo
 ![](./data_for_writeup/feature_maps_conv_1.png)
 * Above plot of feature maps clearly shows that first convolutional layer identifies the low level features of the road that are important for a perfect steering angle, it detectes features like texture, side lane lines, etc.
  
-#### Here is a video of the car maneuring around the lap 
-[![Video Ouutput(./run1/2020_10_09_12_13_32_593.jpg)](https://youtu.be/0ILeNh6LE4Q)
+#### Here is the link to the output video of car maneuring around the lap 
+https://youtu.be/0ILeNh6LE4Q
